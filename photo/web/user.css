@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration:none;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 25%;
+    padding: 10px 0px 0px 55px;
+}
+.clear{
+  clear:both;
+}
+.title{
+    height: 40px;
+    background-color: #FFBB00;
+}
+.welcome{
+    margin-left: 50px;
+    float: left;
+    width: 80%;
+    font-size: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.logout{
+    float: left;
+    font-size: 17px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.function{
+    float:right;
+    padding-top: 50px;
+}
+
+.list li{
+    float:left;
+    padding-right: 20px;
+}
+.list li a{
+    color:#888888	;
+}
+.list a:hover{
+    color:#FFBB00;
+}
+.clear{
+  clear:both;
+}
+.body{
+  width: 100%;
+}
+.userinfo{
+  float: left;
+  width: 26%;
+}
+.userface{
+  width: 80px;
+  margin:50px 0px 10px 200px;
+  float: left;
+  padding: 10px;
+}
+.username{
+  float: left;
+  margin-left: 200px;
+  padding-bottom: 15px;
+}
+.userno{
+  float: left;
+  margin-left: 200px;
+  padding-bottom: 15px;
+}
+p{
+  font-family:微軟正黑體;
+}
+.historycomment{
+  float: left;
+  width: 50%;
+  border-style:dotted;
+  margin-top: 65px;
+  margin-left: 50px;
+}
+.classname{
+  margin-bottom: 15px;
+  font-size:24px;
+}
+.comment{
+  font-size:20px;
+}

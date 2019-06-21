@@ -1,0 +1,236 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration:none;
+}
+
+.logo{
+    float: left;
+    width: 500px;
+}
+.logo img{
+    width: 50%;
+    padding: 10px 0px 0px 55px;
+}
+.title{
+    height: 40px;
+    background-color: #FFBB00;
+   
+}
+.welcome{
+    margin-left: 50px;
+    float: left;
+    width: 80%;
+    font-size: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.logout{
+    float: left;
+    font-size: 17px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.function{
+    float:right;
+    padding-top: 50px;
+ 
+}
+
+.list li{
+    float:left;
+    padding-right: 30px;    
+}
+.list li a{
+    color:	#888888	;
+}
+.list a:hover{
+    color:#FFBB00;
+}
+.list li span a{
+    color:#FFBB00;
+}
+.clear{
+    clear: both;
+}
+.page{
+    padding:50px 0px 0px 100px;
+}
+.page h1{
+    font-size: 40px;
+}
+.henry{
+    margin-top: 20px;
+    width: 700px;
+    margin-left: 120px;
+    float: left;
+    background-color: #fff;
+  }
+  .henry img{
+    height: 258px;
+    width: 258px;
+    float: left;
+  }
+  .henry .economics{
+    float: left;
+  }
+  .henry h2{
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size:20px;
+    color:#5599FF;
+    width: 400px;
+  }
+  .henry .innertext{
+    float:left;
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+  .henry p{
+    font-family:PingFang TC, Semibold,Microsoft JhengHei, Arial;
+    font-size:16px;
+  }
+  .henry:hover{
+    background-color: #FFFFBB;
+  }
+  
+  .dd{
+    margin-top: 20px;
+    width: 700px;
+    margin-left: 120px;
+    float: left;
+    background-color: #fff;
+    margin-bottom: 100px;
+  }
+  .dd img{
+    height: 258px;
+    width: 258px;
+    float: left;
+  }
+  .dd .php{
+    float: left;
+  }
+  .dd h2{
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size:20px;
+    color:#5599FF;
+    width: 400px;
+  }
+  .dd .innertxt{
+    float:left;
+    padding-left: 25px;
+    padding-top: 20px;
+  }
+  .dd p{
+    font-family:PingFang TC, Semibold,Microsoft JhengHei, Arial;
+    font-size:16px;
+  }
+  .dd:hover{
+    background-color: #FFFFBB;
+  }
+  .footer{
+    float: left;
+   
+    width: 1024px;
+  }
+  .footer ul{
+    margin-left: 573px;
+  }
+  .page{
+     display: block;
+    background:#fff;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .pagenum{
+    background:#fff;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .pagenumb{
+     background:#fff;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .pagenumbe{
+   background:#fff;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .pagenumber{
+    background:#fff;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .footer li:hover{
+     background-color: pink;
+  }
