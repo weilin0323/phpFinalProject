@@ -131,6 +131,9 @@ a {
     display: block;
     padding: 16px;  
 }
+.footer{
+    margin-top: 100px;
+}
 /* history */
 .download{
     margin-top: 40px;
@@ -209,12 +212,54 @@ a {
     color: #fff;
     margin-left: 10px;
     border-radius:10px;
+    
 }
+/* .comment a{
+    border: 3px solid #A0522D;
+    color: #A0522D;
+    background-color: none;
+    display: block;
+} */
 .comment a{
     background-color: #A0522D;
     color: #fff;
     display: block;
 }
+/* classevalution */
+.classcomment{
+    margin-top:40px;
+     margin-left:250px;
+    float:left;
+    font-size:22px;
+    font-family:微軟正黑體;
+    width:700px;
+  }
+  .classcomment h1{
+    font-size:40px;
+    color: #FFBB00;
+  }
+  .classcomment input{
+    margin-top:22px;
+    font-size:22px;
+  }
+  .classcomment #enter{
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    font-size: 22px;
+    padding: 12px;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+    background-color: #A0522D;
+    color: #fff;
+    margin-left: 125px;
+    border-radius:10px;
+    margin-bottom:200px;
+  }
+  .classcomment select{
+    margin-top:22px;
+    font-size:22px;
+  }
 /* upload */
 .upload{
     margin-top: 40px;
@@ -344,5 +389,153 @@ a {
 .newAccount input{
     margin: 15px;
 }
-
-
+/* answer */
+.question h2{
+    width:160px;
+    font-size:28px;
+    text-align:center;
+    padding:12px;
+    background-color:#A0522D;
+    position:absolute;
+    top: -30px;
+    left: -60px;
+    border-radius: 15px;
+    font-family:微軟正黑體;
+    font-weight: bolder;
+    color:#fff;
+ }
+ .question{
+    width:800px;
+    border:2px solid #FFBB00;
+    position:relative;
+    padding-top:15px;
+    text-align:center;
+    border-radius: 20px;
+  }
+  .question p{
+    padding: 23px;
+    font-size:20px;
+    font-family:微軟正黑體;
+ }
+ .discuss{
+   margin-top:80px;
+   margin-left:130px;
+   float: left;
+ }
+ .ask{
+    margin-top: 30px;
+    position:relative;
+    margin-left: 100px;
+ }
+ .ask input[type="text"]{
+    border-radius: 15px;
+    width: 650px;
+    border: 2px solid #A0522D;
+    outline: none;
+    padding: 25px;
+    font-size:20px;
+    font-family: 微軟正黑體;
+ }
+ .ask input[type="submit"]{
+    position:absolute;
+    top :30px;
+    left:620px;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+    background-color: #FFBB00;
+    color: #fff;
+    padding:5px 10px 5px 10px;
+    border-radius:10px;
+ }
+.answer p{
+    width: 620px;
+    border:2px solid #FFBB00;
+    text-align:center;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left:65px;
+    padding: 20px;
+    font-size:20px;
+}
+.question textarea{
+    width: 730px;
+    border: 0px ;
+    outline: none;
+    padding: 25px;
+    font-size:20px;
+    font-family: 微軟正黑體;
+    margin-bottom: 35px;
+ }
+ .question input[type="submit"]{
+    position:absolute;
+    top :110px;
+    left:700px;
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+    background-color: #FFBB00;
+    color: #fff;
+    padding:5px 10px 5px 10px;
+    border-radius:10px;
+    margin-bottom: 20px;
+ }
+ .reply{
+    margin-left:100px;
+ }
+ .reply a{
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 650px;
+    border: 2px solid #A0522D;
+    padding: 25px;
+    font-size:20px;
+    font-family: 微軟正黑體;
+    display: block;
+ }
+ .reply a:hover{
+    box-shadow:3px 3px 10px 3px rgba(0,0,0,0.20);
+ }
+ /* bulletinbosrd */
+ .new{
+     margin-left: 20px;
+     padding: 20px;
+ }
+ .new table {
+    float: left;
+    margin-left:100px;
+  }
+  .new table td{
+    padding:10px;
+  }
+  .news{
+      padding: 10px;
+    float: left;
+    font-size:38px;
+    color:gray;
+    font-family:微軟正黑體;
+    font-weight: bolder;
+  }
+  .line{
+      margin-left: 10px;
+    width: 1050px;
+    float: left;
+    border-bottom: 4px solid#FFAC55;
+    /* margin-top: 37px;
+    border-top-width:medium;
+    border-top-style:dashed;
+    border-bottom-width:1px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    width: 80%; */
+  }
+.nuknews{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.nuknews a{
+    font-size: 28px;
+    line-height: 45px;
+    color: #666666;
+}
+.nuknews a:hover{
+    color: #FFBB00;
+}

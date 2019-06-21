@@ -1,8 +1,12 @@
 <?php
     session_start();
     $account=$_SESSION["account"];
-    $link=@mysqli_query('localhost','root','jing1030','php');
-    $name=$_GET['name'];
+    if(!isset($_SESSION["account"])){
+        echo "請登入";
+        header("Refresh:2;url='signin.php'");
+    }
+     $link=@mysqli_query('localhost','root','','php');
+     $name=$_GET['name'];
 
 if(!isset($_COOKIE["count2"])){
     setcookie("count2","1"); 
@@ -22,7 +26,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="all.css">
-    <title></title>
+    <title>歷屆考古</title>
 </head>
 <body>
 <div class="wrap">
@@ -33,13 +37,14 @@ else{
             <div class="function">
              <div class="list">
                  <ul>
-                     <li><a href="#">課程首頁</a></li>
-                     <!-- <li><a href="#">討論區</a></li> -->
+                     <li><a href="home.php">首頁</a></li>
+                     <li><a href="bulletinboard.php">公佈欄</a></li>
                      <?php
-                     if(!$account=$_SESSION["account"]){
+                     if(!isset($_SESSION["account"])){
                         echo "<li><a href='signin.php'>會員登入</a></li>";
                      }else{
-                         echo "<li><a href='home.php?&logout=yes'>會員登出</a></li>";
+                    
+                        echo "<li><a href='home.php?logout=yes'>會員登出</a></li>";
                      }
                     ?>
                 </ul>
@@ -72,7 +77,7 @@ else{
         $subject=$_GET['subject'];
         $name=$_GET['name'];
         //echo $name;
-       $link=@mysqli_connect('localhost','root','jing1030','php');
+       $link=@mysqli_connect('localhost','root','','php');
      
             $SQL="SELECT filename,path,year,date FROM history where name='$name' and subject='$subject'  ";
            
@@ -98,6 +103,7 @@ else{
          </div>
    
     </div>
+    <div class="clear"></div>
     <div class="footer"></div>
     </div>
 

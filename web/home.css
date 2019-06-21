@@ -74,11 +74,12 @@ a {
 .logout a:hover{
     color:#FFBB00;
 }
-.title{
+.header .title{
     height: 40px;
     background-color: #FFBB00;
    
 }
+
 .welcome{
     margin-left: 50px;
     float: left;

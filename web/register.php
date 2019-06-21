@@ -16,13 +16,13 @@
             <div class="function">
              <div class="list">
                  <ul>
-                     <li><a href="#">課程首頁</a></li>
-                     <!-- <li><a href="#">討論區</a></li> -->
+                 <li><a href="home.php">首頁</a></li>
+                     <li><a href="bulletinboard.php">公佈欄</a></li>
                      <?php
                      if(!isset($_SESSION["account"])){
                         echo "<li><a href='signin.php'>會員登入</a></li>";
                      }else{
-                        $yes="yes";
+              
                         echo "<li><a href='home.php?logout=yes'>會員登出</a></li>";
                      }
                     ?>
@@ -45,7 +45,6 @@
     請再輸入一次密碼 :<input type="password" class="pwd" name="passwd2" /> <br>
     <input type="submit" name="button" value="確定" />
     </form></div>   
-    
 </html>    
 <?php
     if(isset($_POST['account'])){
@@ -56,7 +55,7 @@
         $passwd2=$_POST['passwd2'];
     // echo $passwd2;
 
-        $link=@mysqli_connect('localhost','root','a540130a','php');
+        $link=@mysqli_connect('localhost','root','','php');
 
         $SQLexamination="SELECT * FROM user WHERE account='$account'";
         $result=mysqli_query($link,$SQLexamination);
@@ -75,16 +74,16 @@
                 echo "2秒後回到登入頁面".header("refresh:2; url=signin.php");
             }
             else{
-                echo "註冊失敗! 2秒後回到註冊畫面";
-                header("refresh:2; url=register.php");
+                echo "<script>alert('註冊失敗，請重新註冊');url=register.php;</script>";
             }
+        }else{
+            echo "<script>alert('註冊失敗，請重新註冊');url=register.php;</script>";
         }
     }       
 ?>
     </div>
     <div class="footer"></div>
     </div>
-
 </body>
 </html>
 <html>

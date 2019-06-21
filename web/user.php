@@ -9,7 +9,7 @@
         echo "請登入";
         header("Refresh:2;url='signin.php'");
     }
-    $link=@mysqli_query('localhost','root','jing1030','php');
+    $link=@mysqli_query('localhost','root','','php');
     // $result = mysqli_query($link,"SELECT U_MONEY FROM user WHERE account = '$account'");
 ?>
 <!DOCTYPE html>

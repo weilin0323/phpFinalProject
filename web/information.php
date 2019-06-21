@@ -1,7 +1,7 @@
 <?php
     session_start();
     $account=$_SESSION["account"];
-    $link=@mysqli_query('localhost','root','jing1030','php');
+    $link=@mysqli_query('localhost','root','','php');
     $name=$_GET['name'];
 ?>
 <!DOCTYPE html>
@@ -22,13 +22,13 @@
             <div class="function">
              <div class="list">
                  <ul>
-                     <li><a href="#">課程首頁</a></li>
-                     <!-- <li><a href="#">討論區</a></li> -->
+                     <li><a href="home.php">首頁</a></li>
+                     <li><a href="bulletinboard.php">公佈欄</a></li>
                      <?php
                      if(!isset($_SESSION["account"])){
                         echo "<li><a href='signin.php'>會員登入</a></li>";
                      }else{
-                        $yes="yes";
+              
                         echo "<li><a href='home.php?logout=yes'>會員登出</a></li>";
                      }
                     ?>
@@ -82,7 +82,7 @@
                 echo "<div class='picture'><img src='../photo/Bear.png' alt=''></div>";
             }
          echo "<div class='info'>";
-            $link=@mysqli_connect('localhost','root','jing1030','php');//要連到的主機，使用者名稱，密碼，要連到的資料庫
+            $link=@mysqli_connect('localhost','root','','php');//要連到的主機，使用者名稱，密碼，要連到的資料庫
  
          $sql_information="SELECT * FROM information  where name='$name'";
          $sql_content="SELECT * FROM content c join information i on i.name=c.name and i.subject=c.subject where i.name='$name'";
@@ -115,6 +115,7 @@
          ?>
    </div>
     </div>
+    <div class="clear"></div>
     <div class="footer"></div>
     </div>
 

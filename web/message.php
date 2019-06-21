@@ -16,7 +16,7 @@
 session_start();
 if(isset($_GET["message"])){
 	$message=$_GET["message"];
-	$link=@mysqli_connect('localhost','root','jing1030','php');
+	$link=@mysqli_connect('localhost','root','','php');
 	$SQLCreate="INSERT into message(content)VALUES('$message')";
 	$result=mysqli_query($link,$SQLCreate); 
 	$SQL="SELECT * FROM message ";

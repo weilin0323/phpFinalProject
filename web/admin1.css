@@ -150,3 +150,39 @@ table {
   table td{
     padding:10px;
   }
+  .news{
+    float: left;
+    font-size:22px;
+    color:gray;
+    font-family:微軟正黑體;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  .line{
+    float: left;
+    margin-top: 37px;
+    border-top-width:medium;
+    border: 1px solid#FFAC55;
+  /*   border-top-style:dashed; */
+    border-bottom-width:1px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: orange;
+  }
+  .uploadfile{
+        float: left;
+        margin-top: 30px;
+        margin-left: 15px;
+        display:inline;
+        border: 3px #FFAC55 solid;
+        padding: 10px 10px;
+        background-color:#FFAC55;
+  }
+  .uploadfile a{
+    text-decoration:none;
+    color:white;
+    font-size:24px;
+  }

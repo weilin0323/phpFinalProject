@@ -20,13 +20,13 @@ header('Content-type: text/html; charset=utf-8');
             <div class="function">
              <div class="list">
                  <ul>
-                     <li><a href="#">課程首頁</a></li>
-                     <!-- <li><a href="#">討論區</a></li> -->
+                 <li><a href="home.php">首頁</a></li>
+                     <li><a href="bulletinboard.php">公佈欄</a></li>
                      <?php
                      if(!isset($_SESSION["account"])){
                         echo "<li><a href='signin.php'>會員登入</a></li>";
                      }else{
-                        $yes="yes";
+              
                         echo "<li><a href='home.php?logout=yes'>會員登出</a></li>";
                      }
                     ?>

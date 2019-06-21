@@ -5,7 +5,7 @@
 	   echo "請登入";
 	   header("Refresh:2;url='signin.php'");
    }
-    $link=@mysqli_query('localhost','root','jing1030','php');
+    $link=@mysqli_query('localhost','root','','php');
     $name=$_GET['name'];
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="all.css">
-    <title></title>
+    <title>課程評價</title>
 </head>
 <body>
 <div class="wrap">
@@ -26,12 +26,13 @@
             <div class="function">
              <div class="list">
                  <ul>
-                     <li><a href="#">課程首頁</a></li>
+				 <li><a href="home.php">首頁</a></li>
+                     <li><a href="bulletinboard.php">公佈欄</a></li>
                      <?php
-                    if(!isset($_SESSION["account"])){
+                     if(!isset($_SESSION["account"])){
                         echo "<li><a href='signin.php'>會員登入</a></li>";
                      }else{
-                        $yes="yes";
+                    
                         echo "<li><a href='home.php?logout=yes'>會員登出</a></li>";
                      }
                     ?>
@@ -47,7 +48,7 @@
     <div class="content">
         <div class="mean">
         <?php 
-            if(isset($_SESSION["account"])){ 
+        //    if(isset($_SESSION["account"])){ 
             $name=$_GET['name'];
             $subject=$_GET['subject'];
             echo "<span class='top'>$subject</span>";    
@@ -56,13 +57,13 @@
             echo "<li><a href='history.php?name=$name&subject=$subject'>歷屆考古</a></li>";
             echo "<li><a href='upload.php?name=$name&subject=$subject'>考古上傳</a></li>";
             echo "<li><a href='comment.php?name=$name&subject=$subject'>討論區</a></li></ul>";
-        }
+      //  }
 		 ?>
 		 <div class="comment">
           <?php
    	     	$name=$_GET['name'];
   	    	$subject=$_GET['subject'];
-	    	echo "<a href='classevaluation.php?name=$name&subject=$subject'>我要評論</a>";
+	    	echo "<a href='classevaluation.php?name=$name&subject=$subject'>我要評價</a>";
           ?></div>
 		 </div>
 		 
@@ -85,7 +86,7 @@
 			$score2=$_POST["score2"];
 			$hw=$_POST["hw"];
 			$other=$_POST["other"];
-			$link=@mysqli_connect('localhost','root','jing1030','php');
+			$link=@mysqli_connect('localhost','root','','php');
 			// if($link){
 			// 	echo "恭喜您資料庫已連結<br/>";
 			// }else{
@@ -108,7 +109,7 @@
 			
 			else{
 				$name=$_GET['name'];
-				$link=@mysqli_connect('localhost','root','jing1030','php');
+				$link=@mysqli_connect('localhost','root','','php');
 				$SQL="SELECT * FROM classevaluation WHERE name='$name'";
 			echo "<table width=980 border=2>";
 			echo "<tr id='classTop'>"."<td>"."課程名稱"."</td>"."<td>"."修課學年"."</td>"."<td>"."開課系所"."</td>"."<td>"."授課老師"."</td>"."<td>"."推薦指數"."</td>"."<td>"."評分方式"."</td>"."<td>"."考題與作業類型"."</td>"."<td>"."其他補充"."</td>"."</tr>";

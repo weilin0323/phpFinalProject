@@ -47,6 +47,8 @@
                 <a href="home.php"><img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/59887336_2148001515320668_3034674628355162112_n.jpg?_nc_cat=102&_nc_ht=scontent.fkhh1-1.fna&oh=3e3b0a3597d9b5d9d1618160a6ef6f59&oe=5D5B49C3" alt=""></a>
             </div>
             <div class="loging">
+            <div class="logout"><a href="home.php">首頁</a></div>
+            <div class="logout"><a href="bulletinboard.php">公佈欄</a></div>
            <?php
                      if(!isset($_SESSION["account"])){
                         echo "<div class='logout'><a href='signin.php'>會員登入</a></div>";
@@ -147,7 +149,7 @@
             function infoclick7(){
               document.querySelector('.info p').innerHTML = "<div class='catalog'>"+
                    "<ul class='tag'><li><a href='information.php?name=吳建興&subject=統計學(二)'>課程資訊</a></li><li><a href='classdb.php?name=吳建興&subject=統計學(二)'>課程評價</a></li><li><a href='history.php?name=吳建興&subject=統計學(二)'>歷屆考古</a></li>"+
-                   "<li><a href='upload.php?name=吳建興&subject=統計學(二)'>考古上傳</a></li><li><a href='comment.php?name=吳建興&subject=統計學(二)'>吳建興</a></li></ul>"+
+                   "<li><a href='upload.php?name=吳建興&subject=統計學(二)'>考古上傳</a></li><li><a href='comment.php?name=吳建興&subject=統計學(二)'>討論區</a></li></ul>"+
                    "<ul class='tag2'><li><h2 class='heading'>#課程 吳建興 統計學(二)</h2></li>"+
                    "<li>[課程名稱]　統計學(二)</li><li>[修課學期]　下學期</li><li>[開課系所]　資管大二必修</li>"+
                    "<li>[授課教授]　吳建興</li><br><li id='last'>[推薦指數]　4.5/5分</li></ul></div>" ;

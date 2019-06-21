@@ -3,12 +3,8 @@
     $i=$_COOKIE["count"];
     $x=$_COOKIE["count2"];
     $y=$_COOKIE["count3"];
-    // echo $x;
-    // echo "考古上傳使用次數".$i;
-    $link=@mysqli_connect('localhost','root','jing1030','php');
-    // if($link){
-    //     echo "success";
-    // }
+
+    $link=@mysqli_connect('localhost','root','','php');
 
     $SQLinsert="INSERT into usingnum(upload,download,comment) VALUES ('$i','$x','$y')";
     $result=mysqli_query($link,$SQLinsert);
@@ -22,19 +18,6 @@
         $arr[2] = array("comment",(int)$row['comment']);
     } 
     $data = json_encode($arr);
-// echo $data;
-    // $SQLinsert2="INSERT into usingnum(download) VALUES ('$x')";
-    // $result2=mysqli_query($link,$SQLinsert2);
-    // $SQL2="SELECT DISTINCT dowload FROM usingnum";
-    // $result3=mysqli_query($link,$SQL);
-    // while($row = mysqli_fetch_array($result3)){ 
-    //     $arr2[] = array( 
-    //         "download",(int)$row['download'] 
-    //     ); 
-    // } 
-    // $data2 = json_encode($arr2);
-    // echo $data2;
-    // echo $data;
 ?>
 <html>
     <!DOCTYPE html>

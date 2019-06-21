@@ -1,7 +1,12 @@
+
 <?php
-    session_start();
-    $account=$_SESSION["account"];
-    $link=@mysqli_query('localhost','root','jing1030','php');
+   session_start();
+   $account=$_SESSION["account"];
+   if(!isset($_SESSION["account"])){
+	   echo "請登入";
+	   header("Refresh:2;url='signin.php'");
+   }
+    $link=@mysqli_query('localhost','root','','php');
     $name=$_GET['name'];
 ?>
 <!DOCTYPE html>
@@ -22,13 +27,13 @@
             <div class="function">
              <div class="list">
                  <ul>
-                     <li><a href="#">課程首頁</a></li>
-                     <!-- <li><a href="#">討論區</a></li> -->
+                 <li><a href="home.php">首頁</a></li>
+                     <li><a href="bulletinboard.php">公佈欄</a></li>
                      <?php
-                     if(!$account=$_SESSION["account"]){
+                     if(!isset($_SESSION["account"])){
                         echo "<li><a href='signin.php'>會員登入</a></li>";
                      }else{
-                         echo "<li><a href='home.php?&logout=yes'>會員登出</a></li>";
+                        echo "<li><a href='home.php?logout=yes'>會員登出</a></li>";
                      }
                     ?>
                 </ul>
@@ -62,12 +67,12 @@
        echo "<form action='classdb.php?name=$name&subject=$subject' method='post' >";
    ?>
 
-    <font face=微軟正黑體 size=24 color=black><b>課程評價</b></font>
-    </br></br></br>
+    <font face=微軟正黑體 size=24 color=black><h1>課程評價</h1></font>
+    
 <?php 
 $name=$_GET['name'];
 $subject=$_GET['subject'];
-echo "【課程名稱】".$subject;
+echo "【課程名稱】".$subject."</br></br>";
 echo "【授課老師】".$name;   ?></br>
 【修課學年】<select name="classYear" size="1" >
 <option value="104-1">104-1</option>	
@@ -77,7 +82,7 @@ echo "【授課老師】".$name;   ?></br>
 <option value="106-1">106-1</option>
 <option value="106-2">106-2</option>
 <option value="107-1">107-1</option>
-</select><br/></br>
+</select><br/>
 【開課系所】<input type="text" name="department" ><br/></br>
 
 【推薦指數】<select name="score" size="1" >
@@ -97,11 +102,12 @@ echo "【授課老師】".$name;   ?></br>
 ⊙其他補充<br/><textarea name="other" rows="10" cols="50"></textarea><br/><br/>
 <input type="hidden" name="decide" value="<?php echo $_SESSION['decide']; ?>">
 <!-- 加入一個隱藏變數，作為傳送判斷值使用 -->
-<input type="submit" value="送出">
+<input type="submit" value="送出" id="enter">
 </form>
          </div>
          
     </div>
+    <div class="clear"></div>
     <div class="footer"></div>
     </div>
 

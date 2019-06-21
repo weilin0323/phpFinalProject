@@ -2,7 +2,7 @@
 session_start();
 // session_start();
 $_SESSION["account"]=$_POST["account"];
-$link=@mysqli_connect('localhost','root','jing1030','php');
+$link=@mysqli_connect('localhost','root','','php');
 // session_start();
 // if(isset($_POST['account'])){
 $account = $_POST["account"];

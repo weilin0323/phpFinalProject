@@ -2,7 +2,7 @@
 session_start();
 if(isset($_POST["message"])){
 	$message=$_POST["message"];
-	$link=@mysqli_connect('localhost','root','jing1030','php');
+	$link=@mysqli_connect('localhost','root','','php');
 	if($link){
 		echo "恭喜您資料庫已連結<br/>";
 	}else{

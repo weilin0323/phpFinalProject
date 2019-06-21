@@ -5,7 +5,7 @@
         echo "請登入";
         header("Refresh:2;url='signin.php'");
     }
-    $link=@mysqli_query('localhost','root','jing1030','php');
+    $link=@mysqli_query('localhost','root','','php');
 
     if(!isset($_COOKIE["count"])){
         setcookie("count","1"); 
@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="all.css">
-    <title></title>
+    <title>考古上傳</title>
 </head>
 <body>
 <div class="wrap">
@@ -34,15 +34,15 @@
         <div class="function">
             <div class="list">
                 <ul>
-                    <li><a href="#">課程首頁</a></li>
-                    <!-- <li><a href="#">討論區</a></li> -->
-                    <?php
-                    if(!isset($_SESSION["account"])){
+                     <li><a href="home.php">首頁</a></li>
+                     <li><a href="bulletinboard.php">公佈欄</a></li>
+                     <?php
+                     if(!isset($_SESSION["account"])){
                         echo "<li><a href='signin.php'>會員登入</a></li>";
-                    }else{
-                        $yes="yes";
+                     }else{
+                    
                         echo "<li><a href='home.php?logout=yes'>會員登出</a></li>";
-                    }
+                     }
                     ?>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
                             <option value="106-1">106-1</option>
                             <option value="106-2">106-2</option>
                             <option value="107-1">107-1</option>
-                            <option value="107-2">107-1</option>
+                            <option value="107-2">107-2</option>
                         </select>
                 </div>
                 <div class="choose">
@@ -95,7 +95,7 @@
                 $name=$_GET['name'];
                 $subject=$_GET['subject'];
                 $year=$_POST['year'];
-                $link=@mysqli_connect('localhost','root','jing1030','php');
+                $link=@mysqli_connect('localhost','root','','php');
                 $number=count($_FILES["file"]["name"]);
                 for($i=0;$i<$number;$i++){
                 //     echo $i;
