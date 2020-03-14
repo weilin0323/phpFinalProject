@@ -103,7 +103,7 @@
                     echo $filename[$i];
                     $extension[$i]=pathinfo($_FILES["file"]["name"][$i],PATHINFO_EXTENSION);//取得檔案副檔名
                 // echo realpath($path['$filename[$i]']);
-                    $path[$i] = "/php/web/".$filename[$i];
+                    $path[$i] = "/phpFinalProject/web/".$filename[$i];
                     //echo "<p>".$path[$i]."</p>";
                     //echo $year."<br>";
                     $SQL="SELECT filename FROM history WHERE filename='$filename[$i]'";
