@@ -7,10 +7,7 @@
 <img width="400" height="250" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/d3ed3a4d-fc4e-4472-98dc-aab08c9f69b5">
 
 ### 網站功能與架構
-<img width="500" height="350" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/9b9fd69b-fdf4-4d89-b5e7-2ad2a270eac4">
-
-
-
+<img width="510" height="350" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/9b9fd69b-fdf4-4d89-b5e7-2ad2a270eac4"><br/>
 
 <img width="331" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/c7254762-e08d-48cd-ad32-c8ec4a705e55">
 
