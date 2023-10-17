@@ -9,9 +9,8 @@
 ### 網站功能與架構
 <img width="510" height="350" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/9b9fd69b-fdf4-4d89-b5e7-2ad2a270eac4"><br/>
 使用者與管理者權限：<br/>
-<img width="200" height="150" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/c7254762-e08d-48cd-ad32-c8ec4a705e55">
-
-<img width="200" height="150" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/864a9967-a09e-4ea9-aaa9-965ddf0af147">
+<img width="200" height="200" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/c7254762-e08d-48cd-ad32-c8ec4a705e55">
+<img width="200" height="200" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/864a9967-a09e-4ea9-aaa9-965ddf0af147">
 
 ### 後臺分析項目示意圖
 <img width="500" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/f256dfd4-8c2a-4f46-96ea-4b3d9c429995">
