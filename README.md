@@ -7,7 +7,7 @@
 <img width="400" height="250" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/d3ed3a4d-fc4e-4472-98dc-aab08c9f69b5">
 
 ### 網站功能與架構
-<img width="600" height="450" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/9b9fd69b-fdf4-4d89-b5e7-2ad2a270eac4">
+<img width="500" height="350" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/9b9fd69b-fdf4-4d89-b5e7-2ad2a270eac4">
 
 
 
@@ -17,7 +17,8 @@
 <img width="331" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/864a9967-a09e-4ea9-aaa9-965ddf0af147">
 
 ### 後臺分析項目示意圖
-<img width="554" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/b91481f9-3604-49d3-a30e-c821b500f94d">
+<img width="500" alt="image" src="https://github.com/weilin0323/phpFinalProject/assets/51693471/f256dfd4-8c2a-4f46-96ea-4b3d9c429995">
+
 
 
 
